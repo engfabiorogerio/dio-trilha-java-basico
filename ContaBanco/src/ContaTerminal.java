@@ -9,21 +9,21 @@ public class ContaTerminal {
 		 int numero;
 		 String agencia;
 		 String nomeCliente;
-		 BigDecimal saldo;
+		 float saldo;
 		 
 		 Scanner receberDado = new Scanner(System.in);
 		 
-		 System.out.printf("Por favor, informe a agência: \n");
+		 System.out.printf("Por favor, informe a agencia: \n");
 		 agencia = receberDado.next();
-		 System.out.printf("Por favor, digite o número de sua Conta: \n");
+		 System.out.printf("Por favor, digite o numero de sua Conta: \n");
 		 numero = receberDado.nextInt();		 
 		 System.out.println("Por favor informe o nome do Cliente: \n");
 		 nomeCliente = receberDado.next();
 		 System.out.printf("por favor informe o saldo da conta: \n");
-		 saldo = receberDado.nextBigDecimal();
+		 saldo = receberDado.nextFloat();
 		 
-		 System.out.println("Olá, "+nomeCliente+", obrigado por criar uma conta em nosso Banco, sua Agência é: "+
-		 agencia+", Conta: "+numero+", e seu Saldo: "+saldo+"já está disponível para saque.");
+		 System.out.println("Oi, "+nomeCliente+", obrigado por criar uma conta em nosso Banco, sua Agencia: "+
+		 agencia+", Conta: "+numero+", e seu Saldo: "+saldo+" ja esta disponivel para saque.");
 	}
 
 }
